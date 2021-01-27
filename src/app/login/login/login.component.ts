@@ -59,8 +59,6 @@ export class LoginComponent implements OnInit {
              email:this.FormularioLogin.controls.usuario.value, 
              password:this.FormularioLogin.controls.password.value
            }; 
-         
-          
 
          this.loginservico.autenticacao(usuario).subscribe(
            dados=>{
