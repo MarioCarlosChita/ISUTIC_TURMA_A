@@ -1,0 +1,17 @@
+.tamanho{
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 80px;
+}
+.menus{
+   width: 100%;
+   height:200px;
+   background-color: #1e87f0;
+   position: absolute;
+   top: 70%;
+   left: 0; 
+   z-index: 999999999;
+   padding-bottom:40px;
+   opacity: 0.9;
+   padding-left: 10px;
+}

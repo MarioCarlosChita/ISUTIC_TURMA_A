@@ -1,0 +1,103 @@
+<div id="modal-example1" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <div  style="text-align:center">
+              <progress class="pure-material-progress-circular"></progress>
+        </div>
+    </div>
+</div>
+
+
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Registra-se</h2>
+
+<form class="uk-form-stacked" [formGroup]="FormularioRegistro">
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Primeiro Nome</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" formControlName="primeiro_nome" placeholder="Primeiro Nome">
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Ultimo Nome</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" formControlName="ultimo_nome" placeholder="Ultimo Nome">
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Email</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="email" formControlName="email" placeholder="email">
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Senha</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="password" formControlName="senha" placeholder="senha">
+        </div>
+    </div>
+
+    
+</form>
+         
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button" (click)="limpar()">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button" (click)="cadastrar()">Save</button>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<div class ="espaco-top">
+<div class="tamanho uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    <h3 class="uk-card-title negrito">
+        Login
+        <br>
+        <span class="slogan-login">Sistema de Gestão  de Monitoramento de Motorizadas</span>
+    </h3>
+  
+    <div class="espado-top">
+    <form class="uk-form-stacked" [formGroup]="FormularioLogin" >
+
+<div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text">Usuario</label>
+    <div class="uk-form-controls">
+        <input class="uk-input" formControlName="usuario" id="form-stacked-text" type="text" placeholder="usuario">
+    </div>
+</div>
+<div class="uk-margin">
+    <label class="uk-form-label" for="form-stacked-text">Senha</label>
+    <div class="uk-form-controls">
+        <input class="uk-input" formControlName="password" id="form-stacked-text" type="password" placeholder="senha">
+    </div>
+</div>
+
+<div class="uk-margin">
+   <div class="uk-form-controls">
+       <button type="button" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom" (click)="autenticacao()">Entrar</button>
+   </div>
+</div>
+ 
+<div class="login-box">
+        <div class="link-registro" (click)="registra()">
+             Registra-se
+        </div>
+        <div>
+            Esqueceu a Senha?
+        </div>
+</div>
+ 
+
+</form>
+
+    </div>
+</div>
+</div>
+
+
+

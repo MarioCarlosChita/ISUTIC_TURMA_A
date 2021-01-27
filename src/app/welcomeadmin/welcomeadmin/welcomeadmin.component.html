@@ -1,0 +1,105 @@
+<div id="perfil" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <h5 class="uk-modal-title">Perfil do Usuario</h5>
+    <div class="uk-margin">
+      <div class="uk-inline">
+         <span style="color:black  ; font-weight:bold">Nome Completo:</span>  Mario Carlos chita
+      </div>
+    </div>
+
+
+    <div class="uk-margin">
+      <div class="uk-inline">
+         <span style="color:black  ; font-weight:bold">Email:</span>  Mario Carlos chita
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cadastrar" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <h5 class="uk-modal-title">Adicionar Funcionario</h5>
+    <form [formGroup]="Formulario">
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: user"></span>
+          <input
+            class="uk-input uk-form-width-large"
+            type="text"
+            placeholder="Nome"
+            formControlName="nome"
+          />
+        </div>
+      </div>
+
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: user"></span>
+          <input
+            class="uk-input uk-form-width-large"
+            type="text"
+            placeholder="Ultimo Nome"
+            formControlName="ultimo"
+          />
+        </div>
+      </div>
+
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon:mail"></span>
+          <input
+            class="uk-input uk-form-width-large"
+            type="email"
+            placeholder="email"
+            formControlName="email"
+          />
+        </div>
+      </div>
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon:unlock"></span>
+          <input
+            class="uk-input uk-form-width-large"
+            type="password"
+            placeholder="Senha"
+            formControlName="Senha"
+          />
+        </div>
+      </div>
+
+      <button
+        class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"
+      >
+        Adicionar
+      </button>
+    </form>
+  </div>
+</div>
+
+<div id="map" style="width: 100vw; height: 100vh"></div>
+
+<div class="menus">
+  <div class="uk-child-width-expand@s uk-text-center tamanho" uk-grid>
+    <div (click)="adicionar()" style="cursor: pointer">
+      <div class="uk-card uk-card-default uk-card-body">
+        Adicionar Funcionarios
+        <br />
+        <span class="uk-margin-small-right" uk-icon="plus"></span>
+      </div>
+    </div>
+    <div style="cursor: pointer">
+      <div class="uk-card uk-card-default uk-card-body">
+        Listar Funcionarios
+        <br />
+        <span class="uk-margin-small-right" uk-icon="list"></span>
+      </div>
+    </div>
+    <div (click)="perfil()">
+      <div class="uk-card uk-card-default uk-card-body">
+        Meus Perfil
+        <br />
+        <span class="uk-margin-small-right" uk-icon="user"></span>
+      </div>
+    </div>
+  </div>
+</div>
